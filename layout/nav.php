@@ -29,9 +29,11 @@
                       >
                       <div class="dropdown-menu m-0">
                         <a href="find_university.php" class="dropdown-item">Find A University</a>
-                        <a href="feature.html" class="dropdown-item">Our Features</a>
-                        <a href="team.html" class="dropdown-item">Instructors</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                        <a href="scholarship.php" class="dropdown-item">Scholarship</a>
+                        <a href="help-supports.php" class="dropdown-item">Help & Supports</a>
+                        <a href="top-ranked-in-uk.php" class="dropdown-item">Top Ranked Universities</a>
+                        <a href="application-process.php" class="dropdown-item">Application Process</a>
+
                       </div>
                     </div>
 
@@ -43,7 +45,7 @@
                       >Services</a
                       >
                       <div class="dropdown-menu m-0">
-                        <a href="detail.html" class="dropdown-item">Course Detail</a>
+                        <a href="student-admission-services.php" class="dropdown-item">Student Admission Services</a>
                         <a href="feature.html" class="dropdown-item">Our Features</a>
                         <a href="team.html" class="dropdown-item">Instructors</a>
                         <a href="testimonial.html" class="dropdown-item">Testimonial</a>
@@ -80,10 +82,7 @@
                       </div>
                     </div>
                 </div>
-                <a href="" class="btn btn-primary py-2 px-4 d-none d-lg-block"
-                    >APPLY NOW</a
-                >
-                </div>
+                <a href="contact-us.php" class="btn btn-primary py-2 px-4">APPLY NOW</a>
             </nav>
         </div>
       

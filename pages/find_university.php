@@ -28,7 +28,7 @@
       <button class="nav-link" id="Switzerland-tab" data-bs-toggle="tab" data-bs-target="#Switzerland" type="button" role="tab" aria-controls="Switzerland" aria-selected="false">Switzerland</button>
     </li>
   </ul>
-  <div class="tab-content" id="myTabContent">
+  <div class="tab-content shadow" id="myTabContent">
     <div class="tab-pane fade show active" id="UK" role="tabpanel" aria-labelledby="UK-tab">
       <div class="card p-3">
         <div class="row">

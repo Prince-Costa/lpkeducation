@@ -155,4 +155,33 @@
 }
 
 
-/* form  */
+/* Optional custom styling to mimic the original clean look */
+.institution-card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    border: 1px solid rgba(0,0,0,0.08);
+}
+.institution-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05) !important;
+}
+.logo-wrapper {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.card-header {
+    background-color: #092061 !important;
+    color: #fff;
+}
+
+.card-header button{
+    color: #fff;
+}
+
