@@ -13,6 +13,10 @@
   background-color: #2E3280 !important;
 }
 
+.text-nevi{
+    color: #2E3280 !important;
+}
+
 #vishion .card{
   border: 5px solid #2E3280 !important;
   border-radius: 25px !important;
@@ -111,38 +115,38 @@
 
 /* university slider  */
 .partners-section {
-      padding: 60px 0;
-      background-color: #ffffff;
-  }
+  padding: 60px 0;
+  background-color: #ffffff;
+}
   
-  .partners-section h2 {
-      color: #1a235a; /* Matching deep navy blue */
-      font-weight: 700;
-      margin-bottom: 40px;
-  }
+.partners-section h2 {
+  color: #1a235a; /* Matching deep navy blue */
+  font-weight: 700;
+  margin-bottom: 40px;
+}
 
-  /* Container for individual partner logo items */
-  .courses-item {
-      padding: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
+/* Container for individual partner logo items */
+.courses-item {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-  .courses-item:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-  }
+.courses-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
 
-  /* Responsive image configurations */
-  .courses-item img {
-      border: 10px solid #092061;
-      border-radius: 8px;
-      width: 100%;
-      height: 100%;
-  }
+/* Responsive image configurations */
+.courses-item img {
+  border: 10px solid #092061;
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+}
 
   /*Tabs*/
 .nav-tabs .nav-link {
@@ -185,3 +189,23 @@
     color: #fff;
 }
 
+/* Modern aesthetic adjustments */
+.ceo-section {
+    background-color: #ffffff;
+    border-radius: 12px;
+}
+.ceo-image-wrapper {
+    max-width: 450px;
+    margin: 0 auto;
+}
+.ceo-img {
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    object-fit: cover;
+}
+.motto-blockquote {
+    border-left: 4px solid #0d6efd; /* Adjust color to match LPK branding */
+    padding-left: 15px;
+    font-style: italic;
+    background-color: #f8f9fa;
+}
