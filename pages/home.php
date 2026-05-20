@@ -746,8 +746,8 @@
 
 
 <!-- Moto Start  -->
-<div class="mt-5 bg-nevi">
-  <div class="container d-flex justify-content-center align-items-center">
+<div class="mt-5">
+  <div class="container d-flex justify-content-center align-items-center bg-nevi">
     <div class="text-center p-5">
       <h1 class="text-light">Our Moto</h1>
       <p class="text-light">From your first consultation to graduation day, LPK Education provides the free expert guidance and Student Finance England support you need to build a debt-free career at a top UK university.</p>
@@ -755,62 +755,3 @@
   </div>
 </div>
 <!-- Moto end  -->
-
-
-<!-- Contact Start -->
-<div class="container-fluid py-5">
-  <div class="container py-5">
-    <div class="row align-items-center">
-      <div class="col-lg-5 mb-5 mb-lg-0">
-        <div
-          class="bg-light d-flex flex-column justify-content-center px-5"
-          style="height: 450px"
-        >
-          <div class="d-flex align-items-center mb-5">
-            <div class="btn-icon bg-primary mr-4">
-              <i class="fa fa-2x fa-map-marker-alt text-white"></i>
-            </div>
-            <div class="mt-n1">
-              <h4>Our Location</h4>
-              <p class="m-0">123 Street, New York, USA</p>
-            </div>
-          </div>
-          <div class="d-flex align-items-center mb-5">
-            <div class="btn-icon bg-secondary mr-4">
-              <i class="fa fa-2x fa-phone-alt text-white"></i>
-            </div>
-            <div class="mt-n1">
-              <h4>Call Us</h4>
-              <p class="m-0">+012 345 6789</p>
-            </div>
-          </div>
-          <div class="d-flex align-items-center">
-            <div class="btn-icon bg-warning mr-4">
-              <i class="fa fa-2x fa-envelope text-white"></i>
-            </div>
-            <div class="mt-n1">
-              <h4>Email Us</h4>
-              <p class="m-0">info@example.com</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-7">
-        <div class="section-title position-relative mb-4">
-          <h6
-            class="d-inline-block position-relative text-secondary text-uppercase pb-2"
-          >
-            Need Help?
-          </h6>
-          <h1 class="display-4">Send Us A Message</h1>
-        </div>
-        <div class="contact-form">
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSenktvBCc3vt4mc8CGfftgxkoVJwj6j1K2YI-7U3EQIKzaz4g/viewform?embedded=true" width="640" height="961" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfUzVwjx-YutYlHX9JGJmnMkpF-MVyhoyChYEBB3yw2f8G6Ug/viewform?embedded=true" width="640" height="2720" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-<!-- Contact End -->

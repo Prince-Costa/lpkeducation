@@ -52,23 +52,8 @@
                       </div>
                     </div>
 
-
                   <a href="about-us.php" class="nav-link">About Us</a>
-
-                    <div class="nav-item dropdown">
-                      <a
-                          href="#"
-                          class="nav-link dropdown-toggle"
-                          data-toggle="dropdown"
-                      >Branches</a
-                      >
-                      <div class="dropdown-menu m-0">
-                        <a href="detail.html" class="dropdown-item">Course Detail</a>
-                        <a href="feature.html" class="dropdown-item">Our Features</a>
-                        <a href="team.html" class="dropdown-item">Instructors</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                      </div>
-                    </div>
+                  <a href="branches.php" class="nav-link">Branches</a>
                 </div>
                 <a href="contact-us.php" class="btn btn-primary py-2 px-4">APPLY NOW</a>
             </nav>

@@ -135,3 +135,31 @@
     
 })(jQuery);
 
+
+document.querySelectorAll('.vertical-tab .each-tab').forEach(tab => {
+  tab.addEventListener('click', function(e) {
+    // 1. Handle tab button active states
+    const currentActiveTab = this.parentNode.querySelector('.each-tab.active');
+    if (currentActiveTab) {
+      currentActiveTab.classList.remove('active');
+    }
+    this.classList.add('active');
+
+    // 2. Get target selector from data-target attribute
+    const dataTarget = this.getAttribute('data-target'); // e.g., "#Tab1"
+    const targetContent = document.querySelector(dataTarget);
+
+    if (targetContent) {
+      // 3. Hide all tab contents and remove active class from siblings
+      document.querySelectorAll('.vertical-tab-wrapper .vertical-tab-content').forEach(content => {
+        content.style.display = 'none';
+        content.classList.remove('active');
+      });
+
+      // 4. Show the selected content container
+      targetContent.style.display = 'block';
+      targetContent.classList.add('active');
+    }
+  });
+});
+
