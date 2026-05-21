@@ -216,10 +216,7 @@
 #vertical-tab {
     padding: 60px 0;
 }
-#vertical-tab .vertical-tab-wrapper {
-    box-shadow: 0px 0px 5.88px 0.12px rgba(0, 0, 0, 0.14);
-    background: #dee;
-}
+
 #vertical-tab .vertical-tab-wrapper .vertical-tab .each-tab {
     padding: 15px 30px;
     background-color: #5d9ccc;
@@ -239,11 +236,13 @@
     color: #dee;
 }
 #vertical-tab .vertical-tab-wrapper .vertical-tab .each-tab.active {
-    background-color: #dee;
+    background-color: #092061;
 }
+
 #vertical-tab .vertical-tab-wrapper .vertical-tab .each-tab.active .title {
-    color: #1c2a51;
+    color: #fff;
 }
+
 
 #vertical-tab .vertical-tab-wrapper .vertical-tab-content {
     display: none;

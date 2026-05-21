@@ -1,7 +1,7 @@
 <!-- Navbar Start -->
-    <div class="p-0">
+    <div class="p-0 bg-white navbar-light sticky-top">
         <div class="container">
-            <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0">
+            <nav class="navbar navbar-expand-lg py-3 py-lg-0">
                 <a href="lpkeducation.one" class="navbar-brand">
                     <img src="img/logo.png" alt="logo" class="img-fluid" style="max-width: 200px;">
                 </a>
