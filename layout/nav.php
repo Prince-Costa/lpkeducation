@@ -47,7 +47,6 @@
                         <a href="student-admission-services.php" class="dropdown-item">Student Admission Services</a>
                         <a href="partner-university-services.php" class="dropdown-item">Partner University Services</a>
                         <a href="advice-for-parents.php" class="dropdown-item">Advice For Parents</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                         <a href="application-process.php" class="dropdown-item">Application Process</a>
                       </div>
                     </div>

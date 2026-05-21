@@ -64,11 +64,11 @@
                           </li>
                           <li class="d-flex align-items-center mb-3">
                             <i class="fa fa-phone text-nevi fs-5 mr-3"></i>
-                            <a href="tel:+8801717229723" class="text-decoration-none text-nevi">+8801717229723</a>
+                            <a href="tel:" class="text-decoration-none text-nevi">+8801717229723</a>
                           </li>
                           <li class="d-flex align-items-center">
                             <i class="fa fa-envelope text-nevi fs-5 mr-3"></i>
-                            <a href="mailto:gfaruq@wiloreducation.co.uk" class="text-decoration-none text-nevi">gfaruq@wiloreducation.co.uk</a>
+                            <a href="mailto:" class="text-decoration-none text-nevi">gfaruq@wiloreducation.co.uk</a>
                           </li>
                         </ul>
 
@@ -107,7 +107,7 @@
                             <i class="fas fa-map-marked"></i>
                           </div>
                           <div>
-                            <h3 class="card-title h4 mb-1fw-bold">Bangladesh Office 1</h3>
+                            <h3 class="card-title h4 mb-1fw-bold">Bangladesh Office 2</h3>
                             <p class="text-muted mb-0">12/A, R K Mission Road, 1st Floor</p>
                           </div>
                         </div>
@@ -126,11 +126,11 @@
                           </li>
                           <li class="d-flex align-items-center mb-3">
                             <i class="fa fa-phone text-nevi fs-5 mr-3"></i>
-                            <a href="tel:+8801717229723" class="text-decoration-none text-nevi">+8801717229723</a>
+                            <a href="tel:" class="text-decoration-none text-nevi">+8801717229723</a>
                           </li>
                           <li class="d-flex align-items-center">
                             <i class="fa fa-envelope text-nevi fs-5 mr-3"></i>
-                            <a href="mailto:gfaruq@wiloreducation.co.uk" class="text-decoration-none text-nevi">gfaruq@wiloreducation.co.uk</a>
+                            <a href="mailto:" class="text-decoration-none text-nevi">gfaruq@wiloreducation.co.uk</a>
                           </li>
                         </ul>
 

@@ -288,3 +288,39 @@
     line-height: 1.1;
     color: #f7dd4b;
 }
+
+
+/* Modern custom enhancements */
+.pipeline-card {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.pipeline-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05) !important;
+}
+.step-icon-wrapper {
+    width: 50px;
+    height: 50px;
+    background-color: #f0f4f9;
+    color: #0d6efd; /* Adjust hex code to match LPK's branding color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.25rem;
+}
+/* Custom layout logic for responsive middle lines on desktop */
+@media (min-width: 768px) {
+    .pipeline-step:not(:last-child) .pipeline-card::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: -24px;
+        width: 24px;
+        height: 2px;
+        background-color: #dee2e6;
+        z-index: 1;
+    }
+}
