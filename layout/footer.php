@@ -6,9 +6,9 @@
     >
       <div class="container mt-5 pt-5">
         <div class="row">
-          <div class="col-md-3 mb-5">
+          <div class="col-md-4 mb-5">
             <a href="index.html" class="navbar-brand">
-              <img src="img/logo.png" alt="logo" class="img-fluid" style="max-width: 200px;">
+              <img src="<?= BASE_URL ?>img/logo.png" alt="logo" class="img-fluid" style="max-width: 200px;">
             </a>
             <p class="m-0">
                 Empowering Futures Through Accessible Education.
@@ -16,7 +16,7 @@
             </p>
           </div>
 
-          <div class="col-md-3 mb-5">
+          <div class="col-md-4 mb-5">
             <h3 class="text-white mb-4">Get In Touch</h3>
             <p>
               <i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA
@@ -39,28 +39,7 @@
             </div>
           </div>
 
-          <div class="col-md-3 mb-5">
-            <h3 class="text-white mb-4">Our Courses</h3>
-            <div class="d-flex flex-column justify-content-start">
-              <a class="text-white-50 mb-2" href="#"
-                ><i class="fa fa-angle-right mr-2"></i>Web Design</a
-              >
-              <a class="text-white-50 mb-2" href="#"
-                ><i class="fa fa-angle-right mr-2"></i>Apps Design</a
-              >
-              <a class="text-white-50 mb-2" href="#"
-                ><i class="fa fa-angle-right mr-2"></i>Marketing</a
-              >
-              <a class="text-white-50 mb-2" href="#"
-                ><i class="fa fa-angle-right mr-2"></i>Research</a
-              >
-              <a class="text-white-50" href="#"
-                ><i class="fa fa-angle-right mr-2"></i>SEO</a
-              >
-            </div>
-          </div>
-
-          <div class="col-md-3 mb-5">
+          <div class="col-md-4 mb-5">
             <h3 class="text-white mb-4">Quick Links</h3>
             <div class="d-flex flex-column justify-content-start">
               <a class="text-white-50 mb-2" href="#"
