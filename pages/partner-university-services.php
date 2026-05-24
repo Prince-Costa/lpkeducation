@@ -11,12 +11,12 @@
 <!--Main Content Start -->
 <div class="container">
   <div class="card p-4 rounded shadow">
-    <h3>
+    <h4>
       At LPK Education, our ecosystem thrives on strong, mutually beneficial relationships. While we dedicate immense energy to guiding students toward their ideal academic careers, we are equally committed to providing high-value, strategic operations for our partner universities and colleges.
       We serve as a reliable, compliance-focused extension of your international recruitment, marketing, and admissions teams.
-    </h3>
+    </h4>
 
-    <p>
+    <p class="mt-3">
       <i class="fas fa-check text-primary"></i>
       Organise local & International Education Fair/Expo.
     </p>
@@ -86,7 +86,7 @@
     </p>
 
     <div class="my-3 text-center">
-      <a href="contact-us.php" class="btn btn-primary btn-lg px-4 fs-6 shadow-sm">Request A Callback</a>
+      <a href="<?= BASE_URL ?>contactUs" class="btn btn-primary btn-lg px-4 fs-6 shadow-sm">Request A Callback</a>
     </div>
   </div>
 </div>

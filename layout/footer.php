@@ -42,19 +42,27 @@
           <div class="col-md-4 mb-5">
             <h3 class="text-white mb-4">Quick Links</h3>
             <div class="d-flex flex-column justify-content-start">
-              <a class="text-white-50 mb-2" href="#"
-                ><i class="fa fa-angle-right mr-2"></i>Privacy Policy</a
+              <a class="text-white-50 mb-2" href="<?= BASE_URL ?>"
+                ><i class="fa fa-angle-right mr-2"></i>Home</a
               >
-              <a class="text-white-50 mb-2" href="#"
-                ><i class="fa fa-angle-right mr-2"></i>Terms & Condition</a
+
+              <a class="text-white-50 mb-2" href="<?= BASE_URL ?>universities"
+                ><i class="fa fa-angle-right mr-2"></i>Universities</a
               >
-              <a class="text-white-50 mb-2" href="#"
-                ><i class="fa fa-angle-right mr-2"></i>Regular FAQs</a
+
+              <a class="text-white-50 mb-2" href="<?= BASE_URL ?>scholarship"
+                ><i class="fa fa-angle-right mr-2"></i>Scholarship</a
               >
-              <a class="text-white-50 mb-2" href="#"
+
+              <a class="text-white-50 mb-2" href="<?= BASE_URL ?>about-us"
+              ><i class="fa fa-angle-right mr-2"></i>About Us</a
+              >
+
+              <a class="text-white-50 mb-2" href="<?= BASE_URL ?>help-supports"
                 ><i class="fa fa-angle-right mr-2"></i>Help & Support</a
               >
-              <a class="text-white-50" href="#"
+
+              <a class="text-white-50" href="<?= BASE_URL ?>contactUs"
                 ><i class="fa fa-angle-right mr-2"></i>Contact</a
               >
             </div>

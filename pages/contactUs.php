@@ -35,7 +35,7 @@
         <div class="card h-100 pipeline-card shadow-sm p-4 bg-white border-0 position-relative">
           <div class="d-flex align-items-center justify-content-between mb-3">
             <div class="step-icon-wrapper">
-              <i class="bi bi-person-plus-fill"></i>
+              <i class="fas fa-dice-one"></i>
             </div>
             <span class="badge bg-primary-subtle text-primary border border-primary-subtle rounded-pill px-3 py-2 fw-semibold">
                             Within 2 Hours
@@ -56,7 +56,7 @@
         <div class="card h-100 pipeline-card shadow-sm p-4 bg-white border-0 position-relative">
           <div class="d-flex align-items-center justify-content-between mb-3">
             <div class="step-icon-wrapper">
-              <i class="bi bi-telephone-inbound-fill"></i>
+              <i class="fas fa-dice-two"></i>
             </div>
             <span class="badge bg-success-subtle text-success border border-success-subtle rounded-pill px-3 py-2 fw-semibold">
                             Same Day
@@ -77,7 +77,7 @@
         <div class="card h-100 pipeline-card shadow-sm p-4 bg-white border-0 position-relative">
           <div class="d-flex align-items-center justify-content-between mb-3">
             <div class="step-icon-wrapper">
-              <i class="bi bi-envelope-check-fill"></i>
+              <i class="fas fa-dice-three"></i>
             </div>
             <span class="badge bg-info-subtle text-info border border-info-subtle rounded-pill px-3 py-2 fw-semibold">
                             Within 24 Hours

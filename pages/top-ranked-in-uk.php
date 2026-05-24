@@ -21,134 +21,50 @@
 
         <!-- Item 1: South Essex College -->
         <div class="col-12">
-            <div class="card institution-card shadow-sm p-3 bg-white">
-                <div class="row align-items-center text-center text-md-start g-3">
-                    <div class="col-md-3">
-                        <div class="logo-wrapper">
-                            <img src="https://wiloreducation.co.uk/wp-content/uploads/2024/01/SouthEssexCollegeLogo.svg.png" class="logo-img" alt="South Essex College Logo">
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <h2 class="h5 mb-0 fw-bold">South Essex College</h2>
-                    </div>
-                    <div class="col-md-3">
-                        <span class="text-muted"><i class="bi bi-geo-alt"></i> United Kingdom</span>
-                    </div>
-                    <div class="col-md-3 text-center text-md-end">
-                        <a href="application-process.php" class="btn btn-primary px-4">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+          <?php
+          // 1. Index the countries array by their 'id' for instant lookups
+          $countriesById = [];
+          if (isset($universities['country'])) {
+            $countriesById = array_column($universities['country'], null, 'id');
+          }
 
-        <!-- Item 2: University of Central Lancashire -->
-        <div class="col-12">
-            <div class="card institution-card shadow-sm p-3 bg-white">
-                <div class="row align-items-center text-center text-md-start g-3">
-                    <div class="col-md-3">
-                        <div class="logo-wrapper">
-                            <img src="https://wiloreducation.co.uk/wp-content/uploads/2024/01/University-of-Central-Lancashire.png" class="logo-img" alt="University of Central Lancashire Logo">
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <h2 class="h5 mb-0 fw-bold">University of Central Lancashire</h2>
-                    </div>
-                    <div class="col-md-3">
-                        <span class="text-muted">United Kingdom</span>
-                    </div>
-                    <div class="col-md-3 text-center text-md-end">
-                        <a href="application-process.php" class="btn btn-primary px-4">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+          // 2. Loop through the universities and render the layout
+          // 2. Reverse the array while preserving the keys (true) so the last item is processed first
+          $reversedUniversities = array_reverse($universities, true);
 
-        <!-- Item 3: London School of Commerce -->
-        <div class="col-12">
-            <div class="card institution-card shadow-sm p-3 bg-white">
-                <div class="row align-items-center text-center text-md-start g-3">
-                    <div class="col-md-3">
-                        <div class="logo-wrapper">
-                            <img src="https://wiloreducation.co.uk/wp-content/uploads/2024/01/London-School-of-Commerce.webp" class="logo-img" alt="London School of Commerce Logo">
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <h2 class="h5 mb-0 fw-bold">London School of Commerce</h2>
-                    </div>
-                    <div class="col-md-3">
-                        <span class="text-muted">United Kingdom</span>
-                    </div>
-                    <div class="col-md-3 text-center text-md-end">
-                        <a href="application-process.php" class="btn btn-primary px-4">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+          foreach ($reversedUniversities as $key => $university) {
+            // Skip the 'country' key since it holds the reference list, not a university
+            if ($key === 'country') {
+              continue;
+            }
 
-        <!-- Item 4: Elizabeth School of London -->
-        <div class="col-12">
-            <div class="card institution-card shadow-sm p-3 bg-white">
-                <div class="row align-items-center text-center text-md-start g-3">
-                    <div class="col-md-3">
-                        <div class="logo-wrapper">
-                            <img src="https://wiloreducation.co.uk/wp-content/uploads/2024/01/elizabeth-school-of-london-v2.x554edcd1.jpg" class="logo-img" alt="Elizabeth School of London Logo">
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <h2 class="h5 mb-0 fw-bold">Elizabeth School of London</h2>
-                    </div>
-                    <div class="col-md-3">
-                        <span class="text-muted">United Kingdom</span>
-                    </div>
-                    <div class="col-md-3 text-center text-md-end">
-                        <a href="application-process.php" class="btn btn-primary px-4">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+            // Find the country matching this university's country_id
+            $countryId = $university['country_id'] ?? null;
+            $countryName = isset($countriesById[$countryId]) ? $countriesById[$countryId]['name'] : 'Unknown Country';
+            ?>
 
-        <!-- Item 5: LCCA -->
-        <div class="col-12">
-            <div class="card institution-card shadow-sm p-3 bg-white">
-                <div class="row align-items-center text-center text-md-start g-3">
-                    <div class="col-md-3">
-                        <div class="logo-wrapper">
-                            <img src="https://wiloreducation.co.uk/wp-content/uploads/2024/01/lcca-rgb-640x361-1.jpg" class="logo-img" alt="LCCA Logo">
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <h2 class="h5 mb-0 fw-bold">LCCA</h2>
-                    </div>
-                    <div class="col-md-3">
-                        <span class="text-muted">United Kingdom</span>
-                    </div>
-                    <div class="col-md-3 text-center text-md-end">
-                        <a href="application-process.php" class="btn btn-primary px-4">Read More</a>
-                    </div>
+            <div class="card institution-card shadow-sm p-3 bg-white mb-3">
+              <div class="row align-items-center text-center text-md-start g-3">
+                <div class="col-md-3">
+                  <div class="logo-wrapper">
+                    <img src="<?php echo htmlspecialchars($university['img']); ?>" class="logo-img" alt="<?php echo htmlspecialchars($university['name']); ?> Logo">
+                  </div>
                 </div>
+                <div class="col-md-3">
+                  <h2 class="h5 mb-0 fw-bold"><?php echo htmlspecialchars($university['name']); ?></h2>
+                </div>
+                <div class="col-md-3">
+                  <span class="text-muted"><i class="bi bi-geo-alt"></i> <?php echo htmlspecialchars($countryName); ?></span>
+                </div>
+                <div class="col-md-3 text-center text-md-end">
+                  <a href="universities/<?php echo urlencode($university['slug']); ?>" class="btn btn-primary px-4">Read More</a>
+                </div>
+              </div>
             </div>
-        </div>
 
-        <!-- Item 6: The Language Gallery -->
-        <div class="col-12">
-            <div class="card institution-card shadow-sm p-3 bg-white">
-                <div class="row align-items-center text-center text-md-start g-3">
-                    <div class="col-md-3">
-                        <div class="logo-wrapper">
-                            <img src="https://wiloreducation.co.uk/wp-content/uploads/2024/01/103002866420200128112029AM.jpeg" class="logo-img" alt="The Language Gallery Logo">
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <h2 class="h5 mb-0 fw-bold">The Language Gallery</h2>
-                    </div>
-                    <div class="col-md-3">
-                        <span class="text-muted">United Kingdom</span>
-                    </div>
-                    <div class="col-md-3 text-center text-md-end">
-                        <a href="application-process.php" class="btn btn-primary px-4">Read More</a>
-                    </div>
-                </div>
-            </div>
+            <?php
+          }
+          ?>
         </div>
     </div>
 </div>

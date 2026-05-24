@@ -4,9 +4,33 @@ require 'config.php';
 include 'layout/layout.php';
 
 // 2. Data Arrays (Explicitly defined for clean global scope access)
+$countries = [
+  [
+    'id' => 1,
+    'name' => 'Hungary',
+  ],
+  [
+    'id' => 2,
+    'name' => 'Ireland',
+  ],
+  [
+    'id' => 3,
+    'name' => 'Lithuania',
+  ],
+  [
+    'id' => 4,
+    'name' => 'Switzerland',
+  ],
+  [
+    'id' => 5,
+    'name' => 'United Kingdom',
+  ]
+];
+
 $universities = [
   [
     'id' => 1,
+    'country_id' => 1,
     'slug' => 'corvinus-university-of-budapest',
     'name' => 'Corvinus University of Budapest',
     'email' => 'https://www.uni-corvinus.hu/?lang=en',
@@ -20,6 +44,7 @@ $universities = [
   ],
   [
     'id' => 2,
+    'country_id' => 2,
     'slug' => 'ibat-college-dublin',
     'name' => 'IBAT College Dublin',
     'email' => 'https://www.ibat.ie/',
@@ -31,6 +56,7 @@ $universities = [
   ],
   [
     'id' => 3,
+    'country_id' => 2,
     'slug' => 'dublin-business-school',
     'name' => 'Dublin Business School',
     'email' => 'https://www.dbs.ie/',
@@ -42,6 +68,7 @@ $universities = [
   ],
   [
     'id' => 4,
+    'country_id' => 3,
     'slug' => 'mykolas-romeris-university',
     'name' => 'Mykolas Romeris University',
     'email' => 'https://www.mruni.eu/',
@@ -53,6 +80,7 @@ $universities = [
   ],
   [
     'id' => 5,
+    'country_id' => 4,
     'slug' => 'sumas-switzerland',
     'name' => 'SUMSAS Switzerland',
     'email' => 'https://sumas.ch/',
@@ -64,6 +92,7 @@ $universities = [
   ],
   [
     'id' => 6,
+    'country_id' => 4,
     'slug' => 'school-of-hotel-management',
     'name' => 'School of Hotel Management',
     'email' => 'https://www.ihtti.com/',
@@ -75,6 +104,7 @@ $universities = [
   ],
   [
     'id' => 7,
+    'country_id' => 4,
     'slug' => 'hotel-institute-montreux',
     'name' => 'Hotel Institute Montreux',
     'email' => 'https://www.hotelinstitutemontreux.com/',
@@ -86,6 +116,7 @@ $universities = [
   ],
   [
     'id' => 8,
+    'country_id' => 4,
     'slug' => 'culinary-arts-academy-switzerland',
     'name' => 'Culinary Arts Academy Switzerland',
     'email' => 'Culinary Arts Academy Switzerland',
@@ -97,6 +128,7 @@ $universities = [
   ],
   [
     'id' => 9,
+    'country_id' => 4,
     'slug' => 'cesar-ritz-colleges-switzerland',
     'name' => 'Cesar Ritz Colleges Switzerland',
     'email' => '',
@@ -108,12 +140,13 @@ $universities = [
   ],
   [
     'id' => 10,
+    'country_id' => 5,
     'slug' => 'south-essex-college',
     'name' => 'South Essex College',
     'email' => 'https://www.southessex.ac.uk/',
     'state' => 'Essex',
     'address' => 'High Street Grays Essex RM17 6TF United Kingdom',
-    'img' =>  'img/university/South-Essex-College.jpg',
+    'img' =>  'img/university/SouthEssexCollegeLogo.png',
     'postcode' => 'RM17 6TF',
     'about' => 'The College was founded in 1899 as an art school and was renamed later as the Junior Day Technical School. It was then restructured to include commercial and industrial provision such as plumbing. The College became South East Essex College of Arts and Technology (SEECAT) in 1991.
 
@@ -135,6 +168,7 @@ In 2021, South Essex College opened their new Centre for Digital Technologies in
   ],
   [
     'id' => 11,
+    'country_id' => 5,
     'slug' => 'university-of-central-lancashire',
     'name' => 'University of Central Lancashire',
     'email' => 'https://www.uclan.ac.uk/',
@@ -155,6 +189,7 @@ Where opportunity creates success.'
   ],
   [
     'id' => 12,
+    'country_id' => 5,
     'slug' => 'london-school-of-commerce',
     'name' => 'London School of Commerce',
     'email' => 'https://www.lsclondon.co.uk/',
@@ -168,6 +203,7 @@ LSC delivers a range of well-established business and management programmes with
   ],
   [
     'id' => 13,
+    'country_id' => 5,
     'slug' => 'university-of-west-london',
     'name' => 'Elizabeth School of London',
     'email' => 'https://www.elizabethschool.com/',
@@ -182,6 +218,7 @@ It is the mission of the Elizabeth School of London (ESL) to deliver a quality e
   ],
   [
     'id' => 14,
+    'country_id' => 5,
     'slug' => 'lcca-london-college-of-contemporary-arts',
     'name' => 'LCCA London College of Contemporary Arts',
     'email' => 'https://www.lcca.org.uk/',
@@ -197,12 +234,13 @@ We believe that you learn best by doing which is why our programmes involve a si
   ],
   [
     'id' => 15,
+    'country_id' => 5,
     'slug' => 'the-language-gallery',
     'name' => 'The Language Gallery',
     'email' => 'https://www.thelanguagegallery.com/',
     'state' => 'London',
     'address' => '1st Floor, Sceptre Court 40 Tower Hill London EC3N 4DX United Kingdom',
-    'img' =>  'img/university/The-Language-Gallery.jpg',
+    'img' =>  'img/university/TheLanguageGallery.jpeg',
     'postcode' => 'EC3N 4DX',
     'about' => 'The Language Gallery in the UK is part of the thriving Global University Systems group, an international network of higher education institutions where 78,000 people are currently studying around the world in 42 international locations. Based in some of the world’s biggest cities, from London to Singapore, the group’s network is continually growing as we develop partnerships, establish new academic institutions and expand into new regions.
 
@@ -213,6 +251,7 @@ The Language Gallery values are to offer equal opportunities for all staff and s
   ],
   [
     'id' => 16,
+    'country_id' => 5,
     'slug' => 'york-st-john-university-london-campus',
     'name' => 'York St John University LONDON campus',
     'email' => 'https://www.yorksj.ac.uk/london-campus/',
@@ -224,6 +263,7 @@ The Language Gallery values are to offer equal opportunities for all staff and s
   ],
   [
     'id' => 17,
+    'country_id' => 5,
     'slug' => 'wrexham-glyndwr-university',
     'name' => 'Wrexham Glyndŵr University',
     'email' => 'https://www.glyndwr.ac.uk/en/',
@@ -235,6 +275,7 @@ The Language Gallery values are to offer equal opportunities for all staff and s
   ],
   [
     'id' => 18,
+    'country_id' => 5,
     'slug' => 'vistula-university',
     'name' => 'Vistula University',
     'email' => 'https://www.vistula.edu.pl/en',
@@ -246,6 +287,7 @@ The Language Gallery values are to offer equal opportunities for all staff and s
   ],
   [
     'id' => 19,
+    'country_id' => 5,
     'slug' => 'university-of-the-west-of-england',
     'name' => 'University of the West of England',
     'email' => 'https://www.uwe.ac.uk',
@@ -257,6 +299,7 @@ The Language Gallery values are to offer equal opportunities for all staff and s
   ],
   [
     'id' => 20,
+    'country_id' => 5,
     'slug' => 'the-university-of-east-london',
     'name' => 'The University of East London',
     'email' => 'uel.ac.uk',
@@ -268,6 +311,7 @@ The Language Gallery values are to offer equal opportunities for all staff and s
   ],
   [
     'id' => 21,
+    'country_id' => 5,
     'slug' => 'speak-up-london',
     'name' => 'Speak Up London',
     'email' => 'https://www.speakuplondon.com/',
@@ -279,6 +323,7 @@ The Language Gallery values are to offer equal opportunities for all staff and s
   ],
   [
     'id' => 22,
+    'country_id' => 5,
     'slug' => 'south-city-college-birmingham',
     'name' => 'South & City College Birmingham',
     'email' => 'https://www.sccb.ac.uk/',
@@ -290,6 +335,7 @@ The Language Gallery values are to offer equal opportunities for all staff and s
   ],
   [
     'id' => 23,
+    'country_id' => 5,
     'slug' => 'city-college-plymouth',
     'name' => 'City college Plymouth',
     'email' => 'https://www.plymouthcollege.com/',
@@ -301,6 +347,7 @@ The Language Gallery values are to offer equal opportunities for all staff and s
   ],
   [
     'id' => 24,
+    'country_id' => 5,
     'slug' => 'city-college-sheffield',
     'name' => 'MetFilm School London',
     'email' => ' https://www.metfilmschool.ac.uk/',
@@ -312,6 +359,7 @@ The Language Gallery values are to offer equal opportunities for all staff and s
   ],
   [
     'id' => 25,
+    'country_id' => 5,
     'slug' => 'falmouth-university',
     'name' => 'FALMOUTH University',
     'email' => 'https://www.falmouth.ac.uk/',
@@ -323,6 +371,7 @@ The Language Gallery values are to offer equal opportunities for all staff and s
   ],
   [
     'id' => 26,
+    'country_id' => 5,
     'slug' => 'edinburgh-college',
     'name' => 'Edinburgh College',
     'email' => 'http://www.edinburghcollege.ac.uk/',
@@ -334,6 +383,7 @@ The Language Gallery values are to offer equal opportunities for all staff and s
   ],
   [
     'id' => 27,
+    'country_id' => 5,
     'slug' => 'university-of-south-wales',
     'name' => 'De Montfort University Leicester',
     'email' => 'https://www.dmu.ac.uk',
@@ -345,6 +395,7 @@ The Language Gallery values are to offer equal opportunities for all staff and s
   ],
   [
     'id' => 28,
+    'country_id' => 5,
     'slug' => 'cranfield-university',
     'name' => 'Cranfield University',
     'email' => 'https://www.cranfield.ac.uk/',
@@ -356,6 +407,7 @@ The Language Gallery values are to offer equal opportunities for all staff and s
   ],
   [
     'id' => 29,
+    'country_id' => 5,
     'slug' => 'coventry-university',
     'name' => 'Coventry University',
     'email' => 'https://www.coventry.ac.uk',
@@ -369,6 +421,7 @@ Coventry University is a place where all students can achieve their ambitions. T
   ],
   [
     'id' => 30,
+    'country_id' => 5,
     'slug' => 'centre-of-english-studies',
     'name' => 'Centre of English Studies',
     'email' => ' https://www.ces-schools.com/',
@@ -380,6 +433,7 @@ Coventry University is a place where all students can achieve their ambitions. T
   ],
   [
     'id' => 31,
+    'country_id' => 5,
     'slug' => 'cambridge-education',
     'name' => 'Cambridge Education',
     'email' => ' https://www.cambridgeeducationgroup.com/',
@@ -391,6 +445,7 @@ Coventry University is a place where all students can achieve their ambitions. T
   ],
   [
     'id' => 32,
+    'country_id' => 5,
     'slug' => 'arden-university',
     'name' => 'Arden University',
     'email' => 'https://arden.ac.uk/',
@@ -402,7 +457,8 @@ Coventry University is a place where all students can achieve their ambitions. T
   ],
   [
     'id' => 33,
-    'slug' => 'southampton-university',
+    'country_id' => 5,
+    'slug' => 'anglia-ruskin-university-london',
     'name' => 'Anglia Ruskin University London',
     'email' => 'https://london.aru.ac.uk/',
     'state' => 'London',
@@ -834,7 +890,8 @@ By studying Business and Human Resource Management at ARU London, you’ll focus
 ];
 
 
-// 3. Routing Parsing Engine
+
+// 3. ROUTING PARSING ENGINE
 $requestUrl = isset($_GET['url']) ? trim($_GET['url'], '/') : '';
 $segments = explode('/', $requestUrl);
 
@@ -844,22 +901,33 @@ if (empty($requestUrl)) {
   layout('pages/home.php', ['title' => 'Home']);
 }
 
-// A. UNIVERSITIES ROUTE (e.g., /universities/corvinus-university-of-budapest)
-elseif ($segments[0] === 'universities' && isset($segments[1])) {
+
+// B1. UNIVERSITIES DETAILS ROUTE (e.g., /universities/corvinus-university-of-budapest)
+elseif ($segments[0] === 'universities' && isset($segments[1]) && !empty($segments[1])) {
   $slug = $segments[1];
   $currentUni = null;
+  $currentCourses = [];
 
+  // Find the matching university
   foreach ($universities as $uni) {
     if ($uni['slug'] === $slug) {
       $currentUni = $uni;
+
+      // Collect all courses belonging to this university
+      foreach ($courses as $course) {
+        if ($course['uni_id'] === $uni['id']) {
+          $currentCourses[] = $course;
+        }
+      }
       break;
     }
   }
 
   if ($currentUni) {
-    layout('pages/university-detail.php', [
-      'title' => $currentUni['name'],
-      'university' => $currentUni
+    layout('pages/university_details.php', [
+      'title'      => $currentUni['name'],
+      'university' => $currentUni,
+      'courses'    => $currentCourses,
     ]);
   } else {
     http_response_code(404);
@@ -867,64 +935,105 @@ elseif ($segments[0] === 'universities' && isset($segments[1])) {
   }
 }
 
-// B. COURSES ROUTE (e.g., /courses-/pearson-btec-level-4-higher-national-certificate-in-business)
-elseif ($segments[0] === 'courses-' && isset($segments[1])) {
+
+// A. UNIVERSITIES MAIN ROUTE (e.g., /universities)
+
+elseif ($segments[0] === 'universities') {
+  $data = [];
+
+  foreach ($countries as $index => $country) {
+    // Initialize the country details and an empty universities subarray
+    $data[$index] = [
+      'country'      => $country['name'],
+      'universities' => []
+    ];
+
+    // Loop through universities and append them inside their respective country
+    foreach ($universities as $university) {
+      if ($country['id'] == $university['country_id']) {
+        $data[$index]['universities'][] = $university;
+      }
+    }
+  }
+
+  layout('pages/universities.php', [
+    'title' => 'Find A University',
+    'data'  => $data,
+  ]);
+}
+
+
+// B2. COURSES ROUTE (e.g., /courses/pearson-btec-level-4-higher-national-certificate-in-business)
+elseif ($segments[0] === 'courses' && isset($segments[1]) && !empty($segments[1])) {
   $slug = $segments[1];
   $currentCourse = null;
+  $currentUniversity = null;
 
   foreach ($courses as $course) {
     if ($course['slug'] === $slug) {
       $currentCourse = $course;
+      foreach($universities as $university) {
+        if ($university['id'] === $course['uni_id']) {
+          $currentUniversity = $university;
+        }
+      }
       break;
     }
   }
 
   if ($currentCourse) {
-    $currentDetails = null;
-    foreach ($courseDetails as $detail) {
-      if ($detail['course_id'] === $currentCourse['id']) {
-        $currentDetails = $detail;
-        break;
-      }
-    }
 
-    layout('pages/course-detail.php', [
-      'title' => $currentCourse['name'],
-      'course' => $currentCourse,
-      'details' => $currentDetails
+    layout('pages/course-details.php', [
+      'title'   => $currentCourse['name'],
+      'course'  => $currentCourse,
+      'university' => $currentUniversity,
     ]);
   } else {
     http_response_code(404);
     layout('pages/404.php', ['title' => '404 - Not Found']);
   }
+} elseif($segments[0] === 'top-ranked-in-uk' && empty($segments[1])){
+  $updatedUniversities = null;
+
+  foreach ($universities as $index => $university) {
+    $updatedUniversities[$index] = $university;
+    foreach ($countries as $country) {
+      if ($university['country_id'] === $country['id']) {
+        $updatedUniversities['country'][$index] = $country;
+      }
+    }
+
+  }
+
+  layout('pages/top-ranked-in-uk.php', [
+    'title'   => 'Top Ranked Universities In Uk',
+    'universities' => $updatedUniversities,
+  ]);
 }
 
-// C. DYNAMIC CATCH-ALL FOR STANDALONE PAGES
-// This single block automatically handles all your standard pages!
+// C. DYNAMIC CATCH-ALL FOR STANDALONE PAGES (e.g., /contactUs, /branches)
 else {
-  // 1. Map exceptions where file names don't perfectly match the URL paths
+  // Map exceptions where file names don't perfectly match the URL paths
   $customTitles = [
-    'contactUs' => 'Contact Us',
-    'find_university' => 'Find University',
-    'branches' => 'Our Branches',
-    'top-ranked-in-uk' => 'Top Ranked Universities In Uk'
+    'contactUs'        => 'Contact Us',
+    'find_university'  => 'Find University',
+    'branches'         => 'Our Branches',
+    'top-ranked-in-uk' => 'Top Ranked Universities In UK'
   ];
 
   $pageSlug = $segments[0];
   $pageFile = 'pages/' . $pageSlug . '.php';
 
   if (file_exists($pageFile)) {
-    // If it's a known override title, use it. Otherwise, dynamically generate it nicely.
+    // Use mapped title or dynamically fallback to an auto-spaced formatting string
     if (array_key_exists($pageSlug, $customTitles)) {
       $title = $customTitles[$pageSlug];
     } else {
-      // Converts 'advice-for-parents' to 'Advice For Parents'
       $title = ucwords(str_replace('-', ' ', $pageSlug));
     }
 
     layout($pageFile, ['title' => $title]);
   } else {
-    // The file doesn't exist in the pages/ folder
     http_response_code(404);
     layout('pages/404.php', ['title' => '404 - Not Found']);
   }

@@ -27,7 +27,7 @@
                             data-toggle="dropdown"
                         >Study In The UK</a>
                         <div class="dropdown-menu m-0">
-                            <a href="<?= BASE_URL ?>find_university" class="dropdown-item">Find A University</a>
+                            <a href="<?= BASE_URL ?>universities" class="dropdown-item">Find A University</a>
                             <a href="<?= BASE_URL ?>scholarship" class="dropdown-item">Scholarship</a>
                             <a href="<?= BASE_URL ?>help-supports" class="dropdown-item">Help & Supports</a>
                             <a href="<?= BASE_URL ?>top-ranked-in-uk" class="dropdown-item">Top Ranked Universities</a>

@@ -3,7 +3,7 @@
   class="jumbotron jumbotron-fluid position-relative overlay-bottom"
   style="margin-bottom: 90px">
   <div class="container text-center my-5 py-5">
-    <h1 class="text-white mt-4 mb-4">Top Ranked Universities In UK</h1>
+    <h1 class="text-white mt-4 mb-4">Application Process</h1>
   </div>
 </div>
 <!-- Header End -->

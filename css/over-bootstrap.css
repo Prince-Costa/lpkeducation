@@ -2,9 +2,19 @@
   max-width: 1280px;
 }
 
+.hr{
+    border: 1px;
+    border-top: 1px solid black !important;
+}
 
-.jumbotron {
-    background: linear-gradient(rgb(40 120 235 / 7%), rgb(40 120 235 / 58%)), url(../img/hero.jpg), no-repeat center center;
+
+.home-jumbotron{
+    background: url(../img/home-banner.png), no-repeat center center;
+    background-size: cover;
+}
+
+.find-a-uni-jumbotron{
+    background: url(../img/find-a-uni-2.jpg), no-repeat center center;
     background-size: cover;
 }
 

@@ -1,11 +1,11 @@
 <!-- Header Start -->
-<div class="jumbotron jumbotron-fluid position-relative overlay-bottom" style="margin-bottom: 90px">
+<div class="jumbotron home-jumbotron jumbotron-fluid position-relative overlay-bottom" style="margin-bottom: 90px">
   <div class="container text-center my-5 py-5">
     <h1 class="text-white mt-4 mb-4">Learn From Home</h1>
     <h1 class="text-white display-1 mb-5">Education Courses</h1>
     <div class="mx-auto mb-5" style="width: 100%; max-width: 600px">
       <div>
-            <a href="contact.html" class="btn btn-primary py-3 px-5">Apply Now</a>
+            <a href="<?= BASE_URL ?>contactUs" class="btn btn-primary py-3 px-5">Apply Now</a>
       </div>
     </div>
   </div>
@@ -33,7 +33,7 @@
           From selecting the right university and career-focused course to completing applications and securing student finance, our experienced advisors provide free, step-by-step support throughout the entire journey. Whether you want to study business, health and social care, computing, law, education, or other in-demand subjects, we help you find flexible study options that fit around your work, family, and lifestyle commitments.
         </p>
         <div class="row pt-3 mx-0">
-          <div class="col-3 px-0">
+          <div class="col-md-3 col-6 px-0">
             <div class="bg-success text-center p-4">
               <h1 class="text-white" data-toggle="counter-up">2,946</h1>
               <h6 class="text-uppercase text-white">
@@ -42,7 +42,7 @@
               </h6>
             </div>
           </div>
-          <div class="col-3 px-0">
+          <div class="col-md-3 col-6 px-0">
             <div class="bg-primary text-center p-4">
               <h1 class="text-white" data-toggle="counter-up">185</h1>
               <h6 class="text-uppercase text-white">
@@ -50,7 +50,7 @@
               </h6>
             </div>
           </div>
-          <div class="col-3 px-0">
+          <div class="col-md-3 col-6 px-0">
             <div class="bg-secondary text-center p-4">
               <h1 class="text-white" data-toggle="counter-up">275</h1>
               <h6 class="text-uppercase text-white">
@@ -58,7 +58,7 @@
               </h6>
             </div>
           </div>
-          <div class="col-3 px-0">
+          <div class="col-md-3 col-6 px-0">
             <div class="bg-warning text-center p-4">
               <h1 class="text-white" data-toggle="counter-up">37</h1>
               <h6 class="text-uppercase text-white">
@@ -86,7 +86,7 @@
     <div class="text-center p-5">
       <h1>We are ready to help you 24/7</h1>
       <p class="text-light">Your dreams are within reach, and we’re here to help you achieve them. <br> Contact us today to secure your free expert consultation and take the first step toward your goals. We are available whenever you need us.</p>
-      <a href="contact.html" class="btn btn-light py-3 px-5">Apply Now</a>
+      <a href="<?= BASE_URL ?>contactUs" class="btn btn-light py-3 px-5">Apply Now</a>
     </div>          
   </div>
 </div>
@@ -255,46 +255,42 @@
 
     <div class="row g-4 justify-content-center">
 
-      <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+      <div class="col-12 col-sm-6 col-md-4 col-xl-4">
         <div class="edu-card h-100 d-flex flex-column">
           <div class="edu-card-img-wrapper">
-            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=600&auto=format&fit=crop" alt="Students walking on campus">
+            <a href="<?= BASE_URL ?>universities">
+              <img src="<?= BASE_URL ?>img/find-a-uni.jpg" alt="Students walking on campus">
+            </a>
           </div>
           <div class="mt-auto">
-            <button class="btn btn-edu">Find a University</button>
+            <a href="<?= BASE_URL ?>universities" class="btn btn-edu">Find a University</a>
           </div>
         </div>
       </div>
 
-      <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+      <div class="col-12 col-sm-6 col-md-4 col-xl-4">
         <div class="edu-card h-100 d-flex flex-column">
           <div class="edu-card-img-wrapper">
-            <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=600&auto=format&fit=crop" alt="Graduates throwing caps">
+            <a href="<?= BASE_URL ?>scholarship">
+              <img src="<?= BASE_URL ?>img/find-a-scholarship.png" alt="University building building façade">
+            </a>
           </div>
           <div class="mt-auto">
-            <button class="btn btn-edu">Find a Course</button>
+            <a href="<?= BASE_URL ?>scholarship"" class="btn btn-edu">Find a Scholarship</a>
           </div>
         </div>
       </div>
 
-      <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+      <div class="col-12 col-sm-6 col-md-4 col-xl-4">
         <div class="edu-card h-100 d-flex flex-column">
           <div class="edu-card-img-wrapper">
-            <img src="https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=600&auto=format&fit=crop" alt="University building building façade">
-          </div>
-          <div class="mt-auto">
-            <button class="btn btn-edu">Find a Scholarship</button>
-          </div>
-        </div>
-      </div>
+            <a href="<?= BASE_URL ?>application-process">
+              <img src="<?= BASE_URL ?>img/application-process.png" alt="Student with educational materials">
+            </a>
 
-      <div class="col-12 col-sm-6 col-md-4 col-xl-3">
-        <div class="edu-card h-100 d-flex flex-column">
-          <div class="edu-card-img-wrapper">
-            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=600&auto=format&fit=crop" alt="Student with educational materials">
           </div>
           <div class="mt-auto">
-            <button class="btn btn-edu">Application Process</button>
+            <a href="<?= BASE_URL ?>application-process" class="btn btn-edu">Application Process</a>
           </div>
         </div>
       </div>
